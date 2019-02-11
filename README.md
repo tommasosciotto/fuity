@@ -10,6 +10,8 @@ Courses:
 	
 	- "Computer Music - Representations and Models" by Prof. Augusto Sarti.
 
+Tested on Chrome 71 in Windows 10 environment.
+
 
 
 Overview

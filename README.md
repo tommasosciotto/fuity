@@ -1,10 +1,14 @@
-# Fuity
-a game of chants
+# Fuity - a game of chants
 
 Tommaso Sciotto
+
 10325866 - 914844
+
 Advanced Coding Tools and Methodologies
+
 Computer Music - Representations and Models
+
+
 
 Fuity consists in a music game revolving around two singing parrots.
 It is intended to improve one’s ability to create a catchy tune.
@@ -59,9 +63,9 @@ The current code needs reformatting, and likely a worker-based implementation so
 Evolution:
 
 Upon fixing synchronization issues, future updates will include:
-  - more contrapuntal options (free/fixed canon, mensural canon, second species counterpoint, difference canon);
-  - real time accidents and option keyboard shortcuts;
-  - improved animation and user interface;
-  - more complex game dynamics, possibly involving more than two voices and more than one player;
-  - a save option for encoding the performance as a .midi or an .mp3 file.
+		- more contrapuntal options (free/fixed canon, mensural canon, second species counterpoint, difference canon);
+		- real time accidents and option keyboard shortcuts;
+		- improved animation and user interface;
+		- more complex game dynamics, possibly involving more than two voices and more than one player;
+		- a save option for encoding the performance as a .midi or an .mp3 file.
 

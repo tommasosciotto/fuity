@@ -25,7 +25,7 @@ The imitation may be at the unison, or at a given interval (e.g. canon at the II
 The imitation motion may be parallel, preserving the original intervals, or similar, scaling them by some factor.
 The canon may be inverse, in that all intervals are the vertical mirror image of those in the original melody, and it may be backwards, in that the mirroring is performed horizontally in time. 
 Other constraints are available, but not implemented in the current version of the game.
-By definition, the game is based on canon in two voices.
+By definition, the game is based on the canon in two voices.
 
 The user may choose between three tuning systems: pythagorean tuning, in which frequency ratios are composed of powers of 2 and 3; 5-limit just intonation, which extends pythagorean tuning to powers of 5; equal temperament, in which frequency ratios are expressed as powers of the 12-th root of 2.
 

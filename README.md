@@ -41,6 +41,8 @@ When the follower moves further back from the initial position, the user loses a
 
 
 
+
+
 Technical aspects:
 
 The current version of the game is implemented as an HTML5 page, relying on a CSS stylesheet and JavaScript scripts.
@@ -54,6 +56,8 @@ Variety is evaluated at every measure, and compares the current measure with the
 
 
 
+
+
 Issues:
 
 JavaScript events rely on an unstable clock for performing and scheduling tasks, in that these tasks systematically skew the time scan.
@@ -61,6 +65,8 @@ The Web Audio API, on the other hand, relies on a highly precise clock (the audi
 In the current implementation of the game, all time based tasks are comprised in a single function, invoked at the animation rate of the browser. Since this scan is unstable, the function has a lookahead (set to a tatum), within which it performes all forecoming events, so as not to skip them as the two clocks drift apart.
 This implementation, though, it stable only for tempos up to 128 BPM, and only if few game constraints are selected.
 The current code needs reformatting, and likely a worker-based implementation so as to distribute conflicting functions to as many separate threads as possible.
+
+
 
 
 

@@ -58,7 +58,7 @@ Variety is evaluated at every measure, and compares the current measure with the
 
 
 
-Synchronization issue:
+Synchronization issues:
 
 JavaScript events rely on an imprecise clock (integer time, expressed in milliseconds) for performing and scheduling tasks, so that thread execution systematically skews its own time scan.
 The Web Audio API, on the other hand, relies on a highly precise clock (floating point time, expressed in seconds).

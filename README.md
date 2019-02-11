@@ -1,7 +1,9 @@
 # Fuity - a game of chants
 
 Author: Tommaso Sciotto
+
 University: Politecnico di Milano - M.Sc. Music and Acoustic Engineering
+
 Courses:
 	- "Advanced Coding Tools and Methodologies", by Prof. Francesco Bruschi, Prof. Vincenzo Rana;
 	- "Computer Music - Representations and Models" by Prof. Augusto Sarti.

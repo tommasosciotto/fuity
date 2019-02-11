@@ -10,7 +10,9 @@ Courses:
 	
 	- "Computer Music - Representations and Models" by Prof. Augusto Sarti.
 
+Surge:
 Tested on Chrome 71 in Windows 10 environment.
+
 
 
 
@@ -45,7 +47,7 @@ When the follower moves further back from the initial position, the user loses a
 
 Technical aspects:
 
-The current version of the game is implemented as an HTML5 page, relying on a CSS stylesheet and JavaScript scripts.
+The current version of the game is implemented as an HTML5 page, relying on a CSS stylesheet and JS scripts.
 Notes are objects characterized by a diatonic and a chromatic value, a start time, a duration and an audio object.
 Audio objects rely on the Web Audio API, and comprise an oscillator node, a gain node and scheduling values and functions.
 Imitation notes are transformed by means of an offset interval, a scaling module and a sign.

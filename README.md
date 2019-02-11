@@ -23,7 +23,7 @@ The goal of the game is to have the two parrots to kiss and flee together.
 The canon is a contrapuntal technique in which a melody acts as a subject (leader), to which one or more other voices respond, after a certain time, by imitation (follower).
 The imitation may be at the unison, or at a given interval (e.g. canon at the III).
 The imitation motion may be parallel, preserving the original intervals, or similar, scaling them by some factor.
-The canon may be inverse, in that all intervals are the vertical mirror image of those in the original melody, and it may be backwards, in that the mirroring is performed horizontally in time. 
+The canon may be inverse, in that intervals in the imitation are the vertical mirror image of those in the original melody, and it may be backwards, in that mirroring is performed horizontally in time. 
 Other constraints are available, but not implemented in the current version of the game.
 By definition, the game is based on the canon in two voices.
 

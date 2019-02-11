@@ -104,7 +104,7 @@ var yourX = x0,
     yourY = y0;
 
 var they = new Image();
-var theirX = x0 - 200,
+var theirX = x0 - 900,
     theirXtarget = x0,
     theirY = y0;
 

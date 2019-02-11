@@ -10,7 +10,8 @@ Courses:
 	
 	- "Computer Music - Representations and Models" by Prof. Augusto Sarti.
 
-Surge:
+Surge: fuity.surge.sh
+
 Tested on Chrome 71 in Windows 10 environment.
 
 

@@ -325,7 +325,7 @@ document.querySelector("#metronomeSelector").onchange = function() {
 //Game interface
 
 //1. First page is the introduction. Upon clicking I MAY, it loads the second page.
-document.querySelector("#Imay").addEventListener("click", function() {
+document.querySelector("#Iwant").addEventListener("click", function() {
   //Move on to the next page
   document.querySelector("#introduction").classList.toggle("displayNone");
   document.querySelector("#chooseParrot").classList.toggle("displayNone");

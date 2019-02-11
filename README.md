@@ -50,25 +50,30 @@ Imitation notes are transformed by means of an offset interval, a scaling module
 Melodies are stored as arrays of notes. The imitation is first stored in a measure-long buffer; at every measure, the score is evaluated, the buffer is reformatted (shortened, extended, reversed) and added to the follower melody.
 Melodic consonance and contour constraints are evaluated, limited to the user melody, at every new note.
 Harmonic consonance is evaluated at every tatum (1/32), only if both voices are present.
-Variety is evaluated at every measure, and compares the current measure with the previous: two temporal scans are created as note value arrays with tatum resolution; the previous measure is rolled over the current, and a third array stores the differences between values corresponding to the same time; variety is expressed as the minimum standard deviation of differences for the translation that produces the largest sample.
+Variety is evaluated at every measure, and compares the current measure with the previous: two temporal scans are created as value grids with tatum resolution; the previous measure is rolled over the current, and a third array stores the differences between values corresponding to the same time indexes; variety is expressed as the minimum standard deviation of differences for the translation that produces the largest sample.
 
 
 
 Issues:
 
-JavaScript events rely on an unstable clock for performing and scheduling tasks, in that these tasks systematically skew the time scan.
-The Web Audio API, on the other hand, relies on a highly precise clock (the audio context current time).
-In the current implementation of the game, all time based tasks are comprised in a single function, invoked at the animation rate of the browser. Since this scan is unstable, the function has a lookahead (set to a tatum), within which it performes all forecoming events, so as not to skip them as the two clocks drift apart.
+JavaScript events rely on an imprecise clock (time being represented as an integer, expressed in milliseconds) for performing and scheduling tasks, so that thread execution systematically skews its own time scan.
+The Web Audio API, on the other hand, relies on a highly precise clock (time being represented as a floating point number, expressed in seconds).
+In the current implementation of the game, all time based tasks are conditionally performed by a single function, invoked at the animation rate of the browser. Since this scan is unstable, the function is provided with a lookahead (set to a tatum), within which it performes all forecoming events, so as not to skip them as the two clocks drift out of sync.
 This implementation, though, it stable only for tempos up to 128 BPM, and only if few game constraints are selected.
-The current code needs reformatting, and likely a worker-based implementation so as to distribute conflicting functions to as many separate threads as possible.
+Such issues may be resolved by implementing a worker-based structure, so as to distribute conflicting functions to as many separate threads as possible.
 
 
 
 Evolution:
 
-Upon fixing synchronization issues, future updates will include:
+Upon fixing synchronization issues, future updates may include:
+
 	- more contrapuntal options (free/fixed canon, mensural canon, second species counterpoint, difference canon);
+	
 	- real time accidents and option keyboard shortcuts;
+	
 	- improved animation and user interface;
+	
 	- more complex game dynamics, possibly involving more than two voices and more than one player;
+	
 	- a save option for encoding the performance as a .midi or an .mp3 file.

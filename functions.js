@@ -266,7 +266,7 @@ function check() {
         }
       }
       console.log("delta2sum = ", delta2sum, "; maxValidDeltas - 1 = ", maxValidDeltas)
-      variance = delta2sum/Math.abs(maxValidDeltas-1);
+      variance = minDelta2sum/Math.abs(maxValidDeltas-1);
 
       if (!isNaN(variance) && variance > 10)
         donizetti.src = happyComposers[3];

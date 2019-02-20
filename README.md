@@ -59,13 +59,20 @@ Variety is evaluated at every measure, and compares the current measure with the
 
 
 
-Synchronization issues:
+Stability issues:
 
 JavaScript events rely on an imprecise clock (integer time, expressed in milliseconds) for performing and scheduling tasks, so that thread execution systematically skews its own time scan.
 The Web Audio API, on the other hand, relies on a highly precise clock (floating point time, expressed in seconds).
 In the current implementation of the game, all time based tasks are conditionally performed by a single function, invoked at the animation rate of the browser. Since this scan is unstable, the function is provided with a lookahead (set to a tatum), within which it performes all forecoming events, so as not to skip them as the two clocks drift out of sync.
 This implementation, though, it stable only for tempos up to 128 BPM, and only if few game constraints are selected.
 This issue may be resolved by implementing a worker-based structure, so as to distribute conflicting functions to as many separate threads as possible.
+
+
+
+Portability issues:
+
+The current version of Fuity was developed and tested in Chrome 72, Windows 10 (64-bit) environment.
+The program does not work properly in Firefox, Microsoft Edge and Chrome for iPad. More debugging and testing will be needed in order to extend portability, at least among most popular browsers and operative systems.
 
 
 

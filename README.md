@@ -6,9 +6,9 @@ University: Politecnico di Milano - M.Sc. Music and Acoustic Engineering
 
 Subjects:
 
-	- "Advanced Coding Tools and Methodologies", by Prof. Francesco Bruschi, Prof. Vincenzo Rana;
+	- "Advanced Coding Tools and Methodologies", by Prof. Francesco Bruschi, Prof. Vincenzo Rana
 	
-	- "Computer Music - Representations and Models" by Prof. Augusto Sarti.
+	- "Computer Music - Representations and Models" by Prof. Augusto Sarti
 
 Surge: http://fuity.surge.sh
 

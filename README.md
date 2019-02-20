@@ -14,7 +14,7 @@ Surge: http://fuity.surge.sh
 
 Youtube: https://www.youtube.com/watch?v=KSIWT4Mb80o
 
-Tested on Chrome 71 in Windows 10 environment.
+Tested on Chrome 72 in Windows 10 environment.
 
 
 

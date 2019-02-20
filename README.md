@@ -4,7 +4,7 @@ Author: Tommaso Sciotto
 
 University: Politecnico di Milano - M.Sc. Music and Acoustic Engineering
 
-Courses:
+Subjects:
 
 	- "Advanced Coding Tools and Methodologies", by Prof. Francesco Bruschi, Prof. Vincenzo Rana;
 	
